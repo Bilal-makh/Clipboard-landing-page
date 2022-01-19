@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem; // 50px
+  color: #fff;
+  margin-left: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.btn-primary {
+  background-color: $Light-Blue;
+  box-shadow: 0 5px 10px #6173ff66;
+  &:hover {
+    background-color: rgba(97, 115, 255, 0.7);
+  }
+}
+.btn-secondary {
+  background-color: $Strong-Cyan;
+  box-shadow: 0 5px 10px #26baa466;
+  &:hover {
+    background-color: rgba(38, 186, 164, 0.7);
+  }
+}

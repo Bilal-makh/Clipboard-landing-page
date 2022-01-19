@@ -1,0 +1,39 @@
+.tracking-section {
+  margin-bottom: 80px;
+  article {
+    display: flex;
+    align-items: center;
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
+    .image {
+      width: 50%;
+    }
+    gap: 3.75rem;
+    .info {
+      width: 400px;
+      padding: 0.625rem;
+    @include breakpoint(mobile) {
+      max-width: 100%;
+      text-align: center;
+      padding: 0 0.3rem;
+    }
+      > div {
+        margin-bottom: 2.5rem;
+        h4 {
+          margin-bottom: 0.625rem;
+        }
+        p {
+          color: $Grayish-Blue;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}
+.clipboard {
+  .clipboard-image {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

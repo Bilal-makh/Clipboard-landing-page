@@ -1,0 +1,38 @@
+.workflow {
+  margin-bottom: 100px;
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 80px;
+    .box {
+      text-align: center;
+      padding: 15px 30px;
+      text-align: center;
+      .image {
+        margin-bottom: 1.25rem;
+      }
+      h3 {
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+      }
+      p {
+        color: $Grayish-Blue;
+      }
+    }
+  }
+  .brands {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+    img {
+      margin: auto;
+      @include breakpoint(mobile) {
+        display: block;
+        margin-bottom: 1.875rem;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,58 @@
+footer {
+  background-color: #9fabb21a;
+  color: $Dark-Grayish-Blue;
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
+  article {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
+    .info {
+      // width: 60%;
+      display: flex;
+      gap: 2.5rem;
+      justify-content: space-between;
+      @include breakpoint(mobile) {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 1.25rem;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        @include breakpoint(mobile) {
+          margin: auto;
+          margin-bottom: 1.25rem;
+        }
+      }
+      div {
+        p {
+          margin-bottom: 0.625rem;
+          cursor: pointer;
+          &:hover {
+            color: $Light-Blue;
+          }
+        }
+      }
+    }
+    .social {
+      display: flex;
+      gap: 1.25rem;
+      a {
+        font-size: 1.875rem;
+        color: $Dark-Grayish-Blue;
+        &:hover {
+          color: $Light-Blue;
+        }
+      }
+      @include breakpoint(mobile) {
+        margin-top: 1.25rem;
+      }
+    }
+  }
+}

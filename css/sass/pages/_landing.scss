@@ -1,11 +1,17 @@
-
 .landing-section {
   background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
+  @include breakpoint(mobile) {
+    background-image: url(../images/bg-header-mobile.png);
+  }
   .title {
     font-size: 2.5rem;
+    @include breakpoint(mobile) {
+      font-size: 1.875rem;
+      margin-top: 1.25rem;
+    }
   }
   p {
     margin-bottom: 1.25rem;

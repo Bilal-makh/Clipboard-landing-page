@@ -107,8 +107,21 @@ img {
   padding-top: 100px;
 }
 
+@media (max-width: 767px) {
+  .landing-section {
+    background-image: url(../images/bg-header-mobile.png);
+  }
+}
+
 .landing-section .title {
   font-size: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .landing-section .title {
+    font-size: 1.875rem;
+    margin-top: 1.25rem;
+  }
 }
 
 .landing-section p {

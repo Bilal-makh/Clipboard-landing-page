@@ -189,11 +189,15 @@ img {
 .workflow .services .box {
   text-align: center;
   padding: 15px 30px;
-  text-align: center;
 }
 
 .workflow .services .box .image {
   margin-bottom: 1.25rem;
+}
+
+.workflow .services .box .image img {
+  width: 32px;
+  height: 32px;
 }
 
 .workflow .services .box h3 {
